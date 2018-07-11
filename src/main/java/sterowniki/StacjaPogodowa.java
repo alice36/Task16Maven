@@ -3,13 +3,13 @@ package sterowniki;
 import java.util.Random;
 
 public class StacjaPogodowa {
-    public Weather showWeather(){
+    public sterowniki.Weather showWeather(){
         int temperature;
         String weatherDescription;
 
         temperature = getTemperature();
         weatherDescription = desc(temperature);
-        Weather weather = new Weather(temperature,weatherDescription);
+        sterowniki.Weather weather = new sterowniki.Weather(temperature,weatherDescription);
         return weather;
     }
 

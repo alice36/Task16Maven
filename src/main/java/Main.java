@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
 
         ConfigurableApplicationContext context = SpringApplication.run(Main.class, args);
-        SmartHome smartHome = context.getBean(SmartHome.class);
+        sterowniki.SmartHome smartHome = context.getBean(sterowniki.SmartHome.class);
         smartHome.smartHome();
         context.close();
     }

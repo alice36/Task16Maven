@@ -1,11 +1,10 @@
 package sterowniki;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 @Component
 public class SterownikPieca {
-    @Bean
+
     public void piec(sterowniki.Weather weather){
         if (weather.getTemperature()< 15){
             System.out.println("Jest zimno. Uruchamiam piec.");

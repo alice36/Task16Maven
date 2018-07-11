@@ -1,6 +1,5 @@
 package sterowniki;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -17,7 +16,6 @@ public class SmartHome {
         this.sterownikRolet = sterownikRolet;
     }
 
-    @Bean
     public void smartHome(){
         sterowniki.Weather weather = stacjaPogodowa.showWeather();
         sterownikGlosnika.showInfo(weather);

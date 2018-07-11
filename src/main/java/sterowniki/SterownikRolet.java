@@ -1,10 +1,9 @@
 package sterowniki;
+import org.springframework.stereotype.Component;
 
-import org.springframework.context.annotation.Bean;
-
-
+@Component
 public class SterownikRolet {
-    @Bean
+
     public void rolety(sterowniki.Weather weather){
         if (weather.getWeatherDescription().equals("słonecznie")){
             System.out.println("Jest słonecznie. Zasłaniam rolety.");

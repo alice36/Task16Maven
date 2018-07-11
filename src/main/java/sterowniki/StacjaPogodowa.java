@@ -1,7 +1,9 @@
 package sterowniki;
 
 import java.util.Random;
+import org.springframework.stereotype.Component;
 
+@Component
 public class StacjaPogodowa {
     public sterowniki.Weather showWeather(){
         int temperature;

@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class StacjaPogodowa {
+
     public sterowniki.Weather showWeather(){
         int temperature;
         String weatherDescription;

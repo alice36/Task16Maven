@@ -17,9 +17,8 @@ public class SmartHome {
     }
 
     public void smartHome(){
-        sterowniki.Weather weather = stacjaPogodowa.showWeather();
-        sterownikGlosnika.showInfo(weather);
-        sterownikPieca.piec(weather);
-        sterownikRolet.rolety(weather);
+        sterownikGlosnika.showInfo();
+        sterownikPieca.piec();
+        sterownikRolet.rolety();
     }
 }
